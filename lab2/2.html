@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Billabong&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            max-width: 980px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .left-section img {
+            max-width: 400px;
+        }
+
+        .right-section {
+            background: white;
+            padding: 30px 40px;
+            border: 1px solid #dbdbdb;
+            border-radius: 8px;
+            max-width: 350px;
+            width: 100%;
+            margin-left: -20px;
+        }
+
+        .right-section h1 {
+            font-family: 'Billabong', cursive;
+            font-size: 55px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #262626;
+        }
+
+        .right-section input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            font-size: 14px;
+            background-color: #fafafa;
+        }
+
+        .right-section button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .right-section .divider {
+            text-align: center;
+            margin: 15px 0;
+            color: #8e8e8e;
+            position: relative;
+        }
+
+        .right-section .divider::before, .right-section .divider::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background: #dbdbdb;
+        }
+
+        .right-section .divider::before {
+            left: 0;
+        }
+
+        .right-section .divider::after {
+            right: 0;
+        }
+
+        .right-section a {
+            display: block;
+            text-align: center;
+            color: #385185;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #8e8e8e;
+        }
+
+        .footer a {
+            color: #385185;
+            text-decoration: none;
+        }
+
+        .download-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .download-section img {
+            width: 136px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="https://www.instagram.com/images/instagram/xig/homepage/screenshots/screenshot1-2x.png?__d=www" alt="Instagram phone preview">
+        </div>
+        <div class="right-section">
+            <h1>Instagram</h1>
+            <form>
+                <input type="text" placeholder="Телефон, имя пользователя или эл. адрес" required>
+                <input type="password" placeholder="Пароль" required>
+                <a href="#">Забыли пароль?</a>
+                <button type="submit">Войти</button>
+                <div class="divider">или</div>
+                <a href="#">Войти через Facebook</a>
+            </form>
+            <div class="footer">
+                <p>У вас ещё нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="download-section">
+        <img src="https://static.cdninstagram.com/rsrc.php/v4/y9/r/E_2mQvC3HG-.png" alt="App Store">
+        <img src="https://static.cdninstagram.com/rsrc.php/v4/yr/r/fDjwyLC88oO.png" alt="Google Play">
+    </div>
+    <div class="footer">
+        <p>Meta • Информация • Блог • Вакансии • Помощь • API • Конфиденциальность • Условия</p>
+    </div>
+</body>
+</html>
