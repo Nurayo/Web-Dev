@@ -1,0 +1,7 @@
+<h2>Список альбомов</h2>
+<ul>
+  <li *ngFor="let album of albums$ | async">
+    <a [routerLink]="['/albums', album.id]">{{ album.title }}</a>
+    <button (click)="deleteAlbum(album.id)">Удалить</button>
+  </li>
+</ul>

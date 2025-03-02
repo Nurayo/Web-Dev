@@ -1,0 +1,4 @@
+<div *ngFor="let photo of photos$ | async">
+  <img [src]="photo.url" />
+</div>
+<button (click)="goBack()">Назад</button>

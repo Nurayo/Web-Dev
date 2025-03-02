@@ -1,0 +1,7 @@
+<div *ngIf="album$ | async as album">
+  <h2>{{ album.title }}</h2>
+  <input [(ngModel)]="newTitle" placeholder="Новое название" />
+  <button (click)="updateTitle()">Сохранить</button>
+  <button (click)="goBack()">Назад</button>
+  <a [routerLink]="['/albums', album.id, 'photos']">Посмотреть фото</a>
+</div>

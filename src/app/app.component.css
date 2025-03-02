@@ -1,0 +1,19 @@
+.header {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.categories button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
